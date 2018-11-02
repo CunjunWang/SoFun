@@ -6,3 +6,6 @@
 - Spring Data JPA + Hibernate
 ### Back-end
 - Spring Boot
+### Test
+- JUnit4
+- H2Database
