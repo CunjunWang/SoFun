@@ -6,6 +6,10 @@
 - Spring Data JPA + Hibernate
 ### Back-end
 - Spring Boot
+### Front-end
+- Template: Thymeleaf
+- UI: Bootstrap
+- DOM: jQuery
 ### Test
 - JUnit4
 - H2Database
