@@ -1,4 +1,5 @@
 # SoFun
+A project integrated Spring Boot and Elasticsearch.
 ## Tech Stack
 ### Database and Persistence Layer:
 - MySQL: For saving data (take advantage of Transaction).
@@ -6,6 +7,8 @@
 - Spring Data JPA + Hibernate
 ### Back-end
 - Spring Boot
+- Redis session
+- Restful API and Swagger
 ### Front-end
 - Template: Thymeleaf
 - UI: Bootstrap
