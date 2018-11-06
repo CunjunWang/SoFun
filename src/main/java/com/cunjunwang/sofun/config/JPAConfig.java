@@ -23,7 +23,11 @@ import javax.sql.DataSource;
 @EnableTransactionManagement
 public class JPAConfig {
 
-    // 建立数据源
+
+    /**
+     * 建立数据源
+     * @return
+     */
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource dataSource(){
@@ -41,6 +45,11 @@ public class JPAConfig {
         return entityManagerFactory;
     }
 
+    /**
+     * 事务处理
+     * @param entityManagerFactory
+     * @return
+     */
     @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
