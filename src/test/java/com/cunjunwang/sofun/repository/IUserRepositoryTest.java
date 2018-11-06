@@ -17,7 +17,7 @@ public class IUserRepositoryTest extends SoFunApplicationTest {
     @Test
     public void testFindOne() {
         User user = iUserRepository.findOne(1L);
-        Assert.assertEquals("cunjunwang", user.getUserName());
+        Assert.assertEquals("cunjunwang", user.getUsername());
     }
 
 }
