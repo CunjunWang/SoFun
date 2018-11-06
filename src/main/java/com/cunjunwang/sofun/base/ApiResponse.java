@@ -44,7 +44,7 @@ public class ApiResponse {
         return new ApiResponse(status.getCode(), status.getStandardMessage(), null);
     }
 
-    private enum Status {
+    public enum Status {
         SUCCESS(200, "OK"),
         BAD_REQUEST(400, "Bad Request"),
         INTERNAL_SERVER_ERROR(500, "Unknown internal error"),
