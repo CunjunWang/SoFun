@@ -24,6 +24,11 @@ public class AdminController {
         return "admin/login";
     }
 
+    @GetMapping("admin/add/house")
+    public String addHousePage() {
+        return "admin/house-add";
+    }
+
 
 
 }

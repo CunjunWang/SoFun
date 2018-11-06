@@ -38,7 +38,7 @@ public class UserServiceImpl implements IUserService {
         }
 
         List<GrantedAuthority> authorities = new ArrayList<>();
-        roleList.forEach(userRole -> authorities.add(new SimpleGrantedAuthority(userRole.getRoleName())));
+        roleList.forEach(userRole -> authorities.add(new SimpleGrantedAuthority("ROLE_" + userRole.getRoleName())));
         user.setAuthorityList(authorities);
 
         return user;
