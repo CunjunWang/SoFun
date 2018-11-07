@@ -1,6 +1,6 @@
 package com.cunjunwang.sofun.service;
 
-import com.cunjunwang.sofun.entity.User;
+import com.cunjunwang.sofun.entity.po.User;
 
 /**
  * Created by CunjunWang on 2018/11/6.

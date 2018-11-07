@@ -1,7 +1,7 @@
 package com.cunjunwang.sofun.repository;
 
 import com.cunjunwang.sofun.SoFunApplicationTest;
-import com.cunjunwang.sofun.entity.User;
+import com.cunjunwang.sofun.entity.po.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

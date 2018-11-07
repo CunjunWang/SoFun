@@ -16,3 +16,5 @@ A project integrated Spring Boot and Elasticsearch.
 ### Test
 - JUnit4
 - H2Database
+### Resource Management
+- Aliyun OSS

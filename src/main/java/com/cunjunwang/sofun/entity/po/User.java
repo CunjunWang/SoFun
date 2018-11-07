@@ -1,4 +1,4 @@
-package com.cunjunwang.sofun.entity;
+package com.cunjunwang.sofun.entity.po;
 
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;

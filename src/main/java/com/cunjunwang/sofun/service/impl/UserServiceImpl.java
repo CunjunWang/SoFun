@@ -1,7 +1,7 @@
 package com.cunjunwang.sofun.service.impl;
 
-import com.cunjunwang.sofun.entity.User;
-import com.cunjunwang.sofun.entity.UserRole;
+import com.cunjunwang.sofun.entity.po.User;
+import com.cunjunwang.sofun.entity.po.UserRole;
 import com.cunjunwang.sofun.repository.IUserRepository;
 import com.cunjunwang.sofun.repository.IUserRoleRepository;
 import com.cunjunwang.sofun.service.IUserService;
@@ -38,7 +38,7 @@ public class UserServiceImpl implements IUserService {
         }
 
         List<GrantedAuthority> authorities = new ArrayList<>();
-        roleList.forEach(userRole -> authorities.add(new SimpleGrantedAuthority(userRole.getRoleName())));
+        roleList.forEach(userRole -> authorities.add(new SimpleGrantedAuthority("ROLE_" + userRole.getRoleName())));
         user.setAuthorityList(authorities);
 
         return user;

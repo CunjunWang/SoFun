@@ -44,13 +44,14 @@ public class ApiResponse {
         return new ApiResponse(status.getCode(), status.getStandardMessage(), null);
     }
 
-    private enum Status {
+    public enum Status {
         SUCCESS(200, "OK"),
         BAD_REQUEST(400, "Bad Request"),
         INTERNAL_SERVER_ERROR(500, "Unknown internal error"),
         NOT_VALID_ERROR(40005, "Not valid params"),
         NOT_SUPPORTED_OPERATION(40006, "Operation not supported"),
-        NOT_LOGIN(50000, "Not login!");
+        NOT_LOGIN(50000, "Not login!"),
+        NOT_FOUND(404, "Not found!");
 
         private int code;
         private String standardMessage;
