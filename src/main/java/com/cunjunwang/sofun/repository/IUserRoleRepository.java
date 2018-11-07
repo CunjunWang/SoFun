@@ -1,6 +1,6 @@
 package com.cunjunwang.sofun.repository;
 
-import com.cunjunwang.sofun.entity.UserRole;
+import com.cunjunwang.sofun.entity.po.UserRole;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

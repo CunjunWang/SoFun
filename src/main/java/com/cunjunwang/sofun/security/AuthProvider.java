@@ -1,6 +1,6 @@
 package com.cunjunwang.sofun.security;
 
-import com.cunjunwang.sofun.entity.User;
+import com.cunjunwang.sofun.entity.po.User;
 import com.cunjunwang.sofun.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;

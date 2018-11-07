@@ -23,7 +23,6 @@ import javax.sql.DataSource;
 @EnableTransactionManagement
 public class JPAConfig {
 
-
     /**
      * 建立数据源
      * @return

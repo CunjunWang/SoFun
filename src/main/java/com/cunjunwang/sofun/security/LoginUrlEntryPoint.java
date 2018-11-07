@@ -24,8 +24,7 @@ public class LoginUrlEntryPoint extends LoginUrlAuthenticationEntryPoint {
         authEntryPointMap.put("/user/**", "/user/login");
         authEntryPointMap.put("/admin/**", "/admin/login");
     }
-
-
+    
     /**
      * 根据请求跳转到指定页面
      * @param request

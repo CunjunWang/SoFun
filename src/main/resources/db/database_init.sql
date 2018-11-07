@@ -1,6 +1,8 @@
-DROP Database if exists 'sofun';
-CREATE Database 'sofun';
-USE 'sofun';
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+DROP Database if exists sofun;
+CREATE Database sofun;
+USE sofun;
 
 # 用户信息表
 CREATE TABLE u_user
@@ -116,7 +118,7 @@ CREATE TABLE if not exists h_house_reservation
     user_id bigint(20) COMMENT '用户Id',
     reservation_description varchar(200) COMMENT '预约描述',
     is_del bigint(20) DEFAULT 0 COMMENT '逻辑删除符，0 - 未删除，1 - 已删除',
-    reservaation_status DEFAULT 0 COMMENT '预约状态，1 - 加入待看清单，2 - 已预约看房时间，3 - 看房完成',
+    reservaation_status bigint(20) DEFAULT 0 COMMENT '预约状态，1 - 加入待看清单，2 - 已预约看房时间，3 - 看房完成',
     create_time datetime DEFAULT current_timestamp COMMENT '创建时间',
     update_time datetime COMMENT '更新时间',
     reservation_order_time datetime COMMENT '下单时间',
