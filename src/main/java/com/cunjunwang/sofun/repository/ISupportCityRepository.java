@@ -11,5 +11,5 @@ import java.util.List;
 public interface ISupportCityRepository extends CrudRepository<SupportCity, Long> {
     List<SupportCity> findAllByCityLevel(String level);
 
-    List<SupportCity> findAllRegionsByCityEnName(String cityEnName);
+    List<SupportCity> findByCityLevelAndCityBelongTo(String level, String belongTo);
 }

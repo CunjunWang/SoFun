@@ -1,5 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
 target
-src/test
 tmp
+src/main/resources/static/
+src/test/resources/
+src/main/resources/application-private.properties
+src/main/resources/application-test.properties
