@@ -35,29 +35,29 @@ public class SupportCity {
     @Column(name = "city_map_latitude")
     private BigDecimal cityMapLatitude;
 
-//    public enum CityLevel {
-//        CITY("city"),
-//        REGION("region");
-//
-//        private String value;
-//
-//        CityLevel(String value) {
-//            this.value = value;
-//        }
-//
-//        public String getValue() {
-//            return value;
-//        }
-//
-//        public static CityLevel of(String value) {
-//            for (CityLevel level : CityLevel.values()) {
-//                if(level.getValue().equals(value)) {
-//                    return level;
-//                }
-//            }
-//
-//            throw new IllegalArgumentException("No such value");
-//        }
-//    }
+    public enum CityLevel {
+        CITY("city"),
+        REGION("region");
+
+        private String value;
+
+        CityLevel(String value) {
+            this.value = value;
+        }
+
+        public String getValue() {
+            return value;
+        }
+
+        public static CityLevel of(String value) {
+            for (CityLevel level : CityLevel.values()) {
+                if(level.getValue().equals(value)) {
+                    return level;
+                }
+            }
+
+            throw new IllegalArgumentException("No such value");
+        }
+    }
 
 }

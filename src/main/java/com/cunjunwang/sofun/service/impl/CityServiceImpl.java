@@ -11,7 +11,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by CunjunWang on 2018/11/6.
@@ -43,7 +45,7 @@ public class CityServiceImpl implements ICityService {
     @Override
     public ServiceMultiResult<CityDTO> findAllRegionsByCityName(String cityEnName) {
         ServiceMultiResult serviceMultiResult = new ServiceMultiResult();
-        List<SupportCity> regionList = supportCityRepository.findAllRegionsByCityEnName(cityEnName);
+        List<SupportCity> regionList = supportCityRepository.findByCityLevelAndCityBelongTo("region", cityEnName);
         List<CityDTO> result = new ArrayList<>();
         for (SupportCity region : regionList) {
             CityDTO regionDTO = new CityDTO();
@@ -53,5 +55,12 @@ public class CityServiceImpl implements ICityService {
         serviceMultiResult.setResult(result);
         serviceMultiResult.setTotal(result.size());
         return serviceMultiResult;
+    }
+
+    @Override
+    public Map<SupportCity.CityLevel, CityDTO> findCityAndRegion(String cityEnName, String regionEnName) {
+        Map<SupportCity.CityLevel, CityDTO> resultMap = new HashMap<>();
+
+        return null;
     }
 }
